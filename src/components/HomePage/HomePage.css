@@ -1,0 +1,109 @@
+.homeMainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.homeInput{
+    width: 50%;
+    height: 5vh;
+    margin: 2vh 0;
+    padding: 0 1vw;
+    font-size: 1.5em;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.hometext1{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 2vh 0;
+}
+.homeTableContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.homeTable {
+    border-collapse: collapse;
+    width: 90vw;
+    text-align: left;
+}
+
+.homeTable th, .homeTable td {
+    min-width: 10vw;
+    max-width: 10vw;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.homeTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.homeTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.homeFavBtn{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.homeLoadingText{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 2vh 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .homeTable {
+        width: 90vw;
+        overflow-x: auto;
+    }
+    .homeTable, .homeTable th, .homeTable td {
+        padding: 5px;
+    }
+    .homeTable th, .homeTable td {
+        min-width: none;
+        max-width: none;
+        display: block;
+    }
+    .homeTable th::before {
+        content: attr(data-label);
+    }
+    .homeInput{
+        width: 80%;
+    }
+}

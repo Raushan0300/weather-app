@@ -1,0 +1,46 @@
+.weatherMainContainer{
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+}
+.weatherTempText{
+    font-size: 38px;
+    font-family: sans-serif;
+    color: white;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+.weatherTableContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.weatherTable{
+    border-collapse: collapse;
+    width: 100vw;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    mix-blend-mode: difference;
+}
+.weatherIconImg{
+    display: flex;
+    justify-content: center;
+}
+.weatherTableContainer2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vh;
+}
+.weatherTempText2{
+    font-size: 20px;
+    line-height: 0px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: white;
+    mix-blend-mode: difference;
+    text-align: center;
+}
